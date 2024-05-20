@@ -11,6 +11,7 @@ function App() {
             <Button onClick={() => {
                 confirm('Are you ready?') ? setText('😏') : setText('😐')
             }}>{text}</Button>
+            <div>Hello World!</div>
         </AppBlock>
     )
 }
