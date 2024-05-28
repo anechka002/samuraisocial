@@ -1,5 +1,5 @@
 import React from 'react'
-import avatar from './../../assets/avatars/F43BF588-6545-4BFC-8864-5D319FFD88AD.jpg'
+import avatar from './../../assets/avatars/01.jpg'
 
 function UserElement() {
   return (
