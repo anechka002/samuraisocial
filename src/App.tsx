@@ -1,5 +1,3 @@
-
-import styled from "styled-components";
 import './App.css';
 import { Header } from "./layout/header/Header";
 
