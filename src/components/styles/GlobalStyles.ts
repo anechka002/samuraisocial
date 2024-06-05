@@ -16,6 +16,7 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 400;
     font-size: 12px;
     line-height: 1.2;
+    background-color: ${theme.colors.grey.light};
   }
 
   a {
