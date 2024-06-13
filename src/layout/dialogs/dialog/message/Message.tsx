@@ -1,4 +1,5 @@
 import React from 'react'
+import { Style } from './Message.style'
 import { SvgIcon } from '../../../../components/SvgIcon'
 
 type Props = {
@@ -9,15 +10,16 @@ type Props = {
   fromMe: boolean
 }
 
-function Message({avatar, text, date, like, fromMe}: Props) {
+export function Message({avatar, text, date, like, fromMe}: Props) {
   return (
-    <div>
-      <img src={avatar} alt={'Photo of profile'} />
-      <p>{text}</p>
-      <time>{date}</time>
+    <Style.Message fromMe={fromMe}>
+      <Style.Photo src={avatar} alt={'Photo of profile'} />
+      <Style.TextField fromMe={fromMe}>
+        <p>{text}</p>
+        <time>{date}</time>
+      </Style.TextField>
       {like && <SvgIcon iconId={'news'}/>}
-    </div>
+    </Style.Message>
   )
 }
 
-export default Message

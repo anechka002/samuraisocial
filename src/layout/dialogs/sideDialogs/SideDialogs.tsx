@@ -1,14 +1,15 @@
 import React from 'react'
 import { PersonsDialogType } from '../../../data/types'
 import { UserElement } from '../../../components/userElement/UserElement'
+import { StyleLayout } from '../../layoutStyles'
 
 type Props = {
   persons: PersonsDialogType[]
 }
 
-function SideDialogs({persons}: Props) {
+export function SideDialogs({persons}: Props) {
   return (
-    <div>
+    <StyleLayout.SideBlock>
       <h2>Диалоги</h2>
       <ul>
         {persons.map(el => {
@@ -19,8 +20,6 @@ function SideDialogs({persons}: Props) {
           )
         })}
       </ul>
-    </div>
+    </StyleLayout.SideBlock>
   )
 }
-
-export default SideDialogs
